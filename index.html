@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Example</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css " rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="fonts.googleapis.com" rel="stylesheet">
+
+  <style>
+
+    #action, #action2, #action3, #action4
+    {
+        border-radius: 10px;
+        box-shadow: black 0px 2px 6px -2px;
+        width: 650px;
+        height: 500px;
+        margin-right: 10000px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .text-1
+    {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #e9b954;
+        border-radius: 10px;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+    .text-2
+    {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #CADFF0;
+        border-radius: 10px;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+    .text-3
+    {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #e9b954;
+        border-radius: 10px;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+    .text-4
+    {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #d2cff3;
+        border-radius: 10px;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+    #icon-1
+    {
+        border-radius: 10px;
+        box-shadow: black 0px 2px 6px -2px;
+        width: 120px;
+        height: 100px;
+        background-color: #E1E7D3;
+    }
+    #icon-2
+    {
+        border-radius: 10px;
+        box-shadow: black 0px 2px 6px -2px;
+        width: 120px;
+        height: 100px;
+        background-color: #CADFF0;
+    }
+    #icon-3
+    {
+        border-radius: 10px;
+        box-shadow: black 0px 2px 6px -2px;
+        width: 120px;
+        height: 100px;
+        background-color: #FDEABE;
+    }
+    #icon-4
+    {
+        border-radius: 10px;
+        box-shadow: black 0px 2px 6px -2px;
+        width: 100px;
+        height: 100px;
+        background-color: #E7E8D4;
+    }
+    .nav-item1, .nav-item2, .nav-item3, .nav-item4, .nav-item5, p , h1, h2, .A1, .A2 
+    {
+        font-family: Poppins;
+        font-weight: 50;
+    }
+    .navbar 
+    {
+        background-color: #f8f5d4;
+        box-shadow: black 0px 1px 10px -2px;
+    }
+    .nav-item1, .nav-item2, .nav-item3, .nav-item4
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px 5px;
+    }
+    .nav-item5
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px 5px;
+        border-left: 3px solid black;
+    }
+    .nav-item1:hover
+    {
+        background-color: #d2cff3;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+        .nav-item2:hover
+    {
+        background-color: #d2cff3;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+        .nav-item3:hover
+    {
+        background-color: #d2cff3;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+        .nav-item4:hover
+    {
+        background-color: #d2cff3;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+        .nav-item5:hover
+    {
+        background-color: #e9b9e1;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+    .container-text
+    {
+        text-align: left;
+    }
+    .A1
+    {
+        background-color: #ffca24;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+    .A1:hover
+    {
+        background-color: #e9b954;
+        transition: all 0.4s ease;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+    .A2
+    {
+        color: black;
+        border: None;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        box-shadow: black 0px 2px 6px -2px;
+        margin-left: 10px;
+    }
+    .A2:hover
+    {
+        background-color: #add8e6;
+        transition: all 0.4s ease;
+        box-shadow: black 0px 2px 6px -2px;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+
+<nav class="navbar navbar-expand-sm">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-white" href="#">
+                <img src="ccs.png" alt="logo" height="100px" width="auto">
+            </a>
+            
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#mynavbar">
+            
+            <span class="navbar-toggler-icon">
+            </span>
+            
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+
+                
+                    <ul class="navbar-nav ms-auto gap-2">
+
+                        <li class="nav-item1">
+                        <a class="nav-link text-black" href="index.html"><i class="fa fa-home text-black"></i> HOME</a>
+                        </li>
+
+                        <li class="nav-item2">
+                         <a class="nav-link text-black" href="page2.html"><i class="fa fa-book text-black"></i> COURSE OFFERS</a>
+                        </li>
+
+                        <li class="nav-item4">
+                        <a class="nav-link text-black" href="page3.html"><i class="fa fa-phone text-black"></i> CONTACT</a>
+                        </li>
+
+                        <li class="nav-item5">
+                        <a class="nav-link text-black" href="page4.html"><i class="fa fa-envelope text-black"></i> ENROLL NOW!!</a>
+                        </li>
+
+                    </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    </div>
+
+
+    <div class="container-text m-4 p-4 text-container">
+
+        <h2>Welcome to Our School!</h2>
+        <p>Explore our courses and programs designed to help you or your child to succeed.</p>
+
+        <button type="button" class="A1 btn btn-warning">Schedule a School Tour</button>
+        <button type="button" class="A2 btn">Learn More</button>
+        
+    </div>
+
+
+    <div class="container-fluid p-4 text-center" style="background-color: #f8f5d4;">
+        <h1>Why At O.B. Montessori?</h1>
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <img src="icon1.png" alt="ICON" id="icon-1" class="container-fluid">
+                <h1>Child-Led Learning</h1>
+                <p>Our approach encourages children to explore and learn at their own pace. Building their independence and confidence.</p>
+            </div>
+
+            <div class="col-sm-3">
+                <img src="icon2.png" alt="ICON" id="icon-2" class="container-fluid">
+                <h1>Critical Thinking</h1>
+                <p>We encourage students to think critically and solve problems creatively. Promoting freedom of thought and expression.</p>
+            </div>
+
+            <div class="col-sm-3">
+                <img src="icon3.png" alt="ICON" id="icon-3" class="container-fluid">
+                <h1>Global & Ethical Perspectives</h1>
+                <p>We foster a global mindset and ethical values in our students, preparing them to be responsible citizens of the world.</p>
+            </div>
+
+            <div class="col-sm-3">
+                <img src="icon4.png" alt="ICON" id="icon-4" class="container-fluid">
+                <h1>Small Class, Strong Community</h1>
+                <p>Our small class sizes allow for a stronger bond between students especially with our implementation of a officer type system.</p>
+            </div>
+    </div>
+
+<br><br>
+
+
+    <h1 class="container-fluid">──────────────────────── O.B. Montessori in action ────────────────────────</h1>
+
+    <div class="container-fluid p-4 text-center">
+        <div class="row">
+            <div class="col-sm-4">
+
+                <p></p>
+                <img src="action1.jpg" alt="ACTION" id="action" class="container-fluid">
+
+            </div>
+
+            <div class="text-1 col-sm-8">
+
+                <h2 class="container-fluid">Child-Led Learning</h2>
+                <p class="container-fluid">
+                    At OB Montessori Center, children are given the freedom to explore lessons and activities based on their interests and readiness. Instead of being rushed or forced to move at the same pace as others, students learn at a speed that is comfortable for them. This approach helps children develop independence, self-discipline, and confidence, while allowing teachers to guide and support each child’s individual learning journey.
+                </p>
+
+            </div>
+
+
+            <div class="col-sm-4">
+
+                <img src="action2.jpg" alt="ACTION" id="action2" class="container-fluid">
+
+            </div>
+
+            <div class="text-2 col-sm-8">
+
+                <h2 class="container-fluid">Critical Thinking</h2>
+                <p class="container-fluid">Food Fair
+                   Our Annual Food Fair is an event where students showcase their culinary skills and creativity. They plan, prepare, and present a variety of dishes, learning about nutrition, teamwork, and entrepreneurship in the process.
+            </div>
+
+        <div class="row">
+
+
+            <div class="col-sm-4">
+
+                <img src="action3.jpg" alt="ACTION" id="action3" class="container-fluid">
+
+            </div>
+
+            <div class="text-3 col-sm-8">
+
+                <h2 class="container-fluid">Global & Ethical Perspectives</h2>
+                <p class="container-fluid">House of Sarang in Taguig City
+                    Through OBMC'S Peace Projects, Students are taught to have empathy and help those in need. For example, our students have visited the House of Sarang, an orphanage in Taguig City, to spend time with the children there and provide them with support and care. Spending their time playing games, reading stories, and sharing meals with the children.
+                </p>
+
+            </div>
+
+            <div class=" col-sm-4">
+
+                <img src="action4.jpg" alt="ACTION" id="action4" class="container-fluid">
+
+            </div>
+
+            <div class="text-4 col-sm-8">
+
+                <h2 class="container-fluid">Small Class, Strong Community</h2>
+                <p class="container-fluid">Student Council Activities
+                    Our student council organizes various activities and events that promote school spirit and community involvement. These activities include charity drives, cultural celebrations, and school-wide competitions. Through these events, students learn the importance of teamwork, leadership, and giving back to the community.
+                </p>
+            </div>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+</html>
